@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background-color: white;
+    scroll-behavior: smooth;
+}
+
+header{
+    height: 100vh;
+    background-color: white; 
+}
+
+section{
+    min-height: 400px;
+}
+
+footer{
+    height: 75vh;
+    background-color: rgb(37, 36, 36);    
+}
+
+h2{
+    font-size: 30px;
+    padding-bottom: 20px;
+    color: #f75003;
+}
+
+nav{
+    background: #161414;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 17px;
+    padding-bottom: 30px;
+    box-shadow: 0 2px 2px #535353;
+}
+
+nav img{
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(199deg) brightness(110%) contrast(106%);
+}
+
+.theme-switch-container{
+    padding: 20px 0 5px 15px;
+    display: flex;
+}
+
+.theme-switch-icons {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    border: 2px double rgb(255, 255, 255);
+    text-align: center;
+    justify-content: baseline;
+    border-radius: 50%;
+    cursor: pointer;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+#light-mode-icon{
+    visibility: visible;
+    width:35px;
+    height:35px;
+    fill: #f7ba42;
+    transform: translate(-3%,20%);
+}
+
+#dark-mode-icon{
+    visibility: hidden;
+    width:35px;
+    height:35px;
+    fill: white;
+    transform: translateY(-100%);
+}
+
+#button-text{
+    color: wheat;
+    font-weight: 700;
+    margin: 15px;
+}
+
+.menu-bar{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu-bar li a{
+    display: inline-block;
+    padding: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+    color: wheat;
+}
+
+li a:hover{
+    color: #f75003;
+    transition: color .1s linear;
+}
+
+.open-menu{
+    display:none;
+    font-size: 2rem;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.close-menu{
+    display:none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.intro-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    height: 100%;
+}
+
+.name{
+    padding-top: 40px;
+    margin: 40px 0 0 30px;
+    text-align: center;
+}
+
+h1{
+    font-size: 45px;
+    color: #f75003;
+}
+
+.name p{
+    color: #413838;
+    opacity: 60%;
+}
+
+.text-container{
+    margin-top: 10px;
+}
+
+.custom-button{
+    display: inline-block;
+	outline: none;
+    border: none;
+    background:#161414 ;
+    margin: 20px 0px;
+	padding: 12px 20px;
+    border-radius: 40px;
+    box-shadow: 3px 2px rgba(49, 38, 38, .3);
+}
+
+.custom-button a{
+    color: white;
+    z-index: 1;
+}
+
+#about-me{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+.praveen-pic{
+    margin: 15px 80px 20px 0;
+}
+
+.praveen-pic img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.social-icons{
+    margin-right: 20px;
+    margin-top: 18%;
+}
+
+.social-icon{
+    width:35px;
+    height:35px;  
+    padding: 10px;
+}
+
+.social-icon svg:hover{
+    fill: #f75003;
+}
+
+hr{
+    margin: 0 30px 0 30px;
+    opacity: 0.7;
+}
+
+.text-container{
+    text-align: center;
+    width: 60%;
+    height: 60%;
+}
+
+.information{
+    color: #161414;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: justify;
+    padding: 10px 0;
+}
+
+.skills-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:#161414;
+    text-align: center;
+    padding: 40px;
+}
+
+.prog-langs,.web-dev,.databases,.other-skills{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-item{
+    color: green;
+    font-weight: 600;
+    font-size: 20px;
+    width: max-content;
+    border: 2px solid rgb(119, 42, 7);
+    padding: 8px 12px;
+    margin: 20px 20px;
+    border-radius: 20px;
+}
+
+.skill-item span:first-child{
+    padding-left: 20px;
+}
+
+.skill-item img{
+    width: 20px;
+    color: grey;
+}
+
+.checked{
+    filter: invert(82%) sepia(100%) saturate(7451%) hue-rotate(347deg) brightness(96%) contrast(101%);;
+}
+
+.un-checked{
+    filter: invert(43%) sepia(6%) saturate(182%) hue-rotate(97deg) brightness(99%) contrast(90%);
+}
+
+.projects-section,#contact-me{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+}
+
+.project-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.project{
+    width: 300px;
+    height: 400px;
+    box-shadow: 3px 2px 10px rgba(49, 38, 38, .3);
+}
+
+.proj-img{
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+.project h3{
+    color: #2a337c;
+    font-size: 20px;
+    font-weight: 900;    
+}
+
+.project h4{
+    font-size: 15px;
+    font-weight: 700;    
+}
+
+.small-text{
+    font-size: 13px;
+    font-weight: 300;
+    margin: 4px 0;
+}
+
+.project a{
+    color: rgb(117, 17, 17);
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.form-container{
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+label{
+    color: silver;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+input[type=text], input[type=email] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #f75003;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.message{
+    height: 150px;
+    word-break: break-word;
+}
+
+::-webkit-input-placeholder {
+    color: #535353;
+}
+
+#contact-me{
+    justify-content: center;
+}
+
+.contact-btn{
+    font-weight: 500;
+    background:#e4d5d5 ;
+    cursor: pointer;
+}
+
+.contact-btn:hover{
+    background:#f75003 ;
+    color: #161414;
+}
+
+@media only screen and (max-width: 900px){
+    
+   
+    nav .menu-bar{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 3;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #161414;
+        transform: top 1s linear;
+        display: none;
+    }
+    
+    nav .close-menu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+    }
+
+    nav .open-menu{
+        display: block;
+        position: absolute;
+        top: 13px;
+        right: 30px;
+    }
+
+
+
+
+}
