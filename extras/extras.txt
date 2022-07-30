@@ -1,0 +1,12 @@
+//contacts db project
+
+<div class="project">
+    <img class="proj-img" src="resources/img/contacsCRUD.png" alt="Contacts CRUD"/>
+    <h3>Contacts CRUD app</h3>
+    <p class="small-text">Created a CRUD web app for storing contacts data in a database.</p>
+    <h4>Tech Used</h4>
+    <p class="small-text">MySql, Spring Boot, Thymeleaf</p>
+    <hr>
+    <p class="small-text"><a target="_blank" href="https://github.com/praveenK257/ContactsCRUD-app">View Source Code</a></p>
+</div>
+            
